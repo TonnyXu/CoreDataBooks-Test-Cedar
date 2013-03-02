@@ -11,7 +11,7 @@
 @implementation MyTestClass
 
 - (void)testSomething{
-  STAssertTrue(NO, @"This is mean to fail!");
+  STAssertTrue(YES, @"Cool!");
 }
 
 @end
