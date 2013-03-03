@@ -36,6 +36,12 @@
 		CE1F103716E2068800964203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F103516E2068800964203 /* InfoPlist.strings */; };
 		CE1F103A16E2068800964203 /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F103916E2068800964203 /* LogicTest.m */; };
 		CE1F104116E2092E00964203 /* MyTestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1F104016E2092E00964203 /* MyTestClass.m */; };
+		CE1F105F16E3464100964203 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1F102E16E2068800964203 /* SenTestingKit.framework */; };
+		CE1F106016E3464100964203 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2888322B0F4D1BB200A03A78 /* UIKit.framework */; };
+		CE1F106116E3464100964203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288832290F4D1BB200A03A78 /* Foundation.framework */; };
+		CE1F106716E3464100964203 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1F106516E3464100964203 /* InfoPlist.strings */; };
+		CE1F106916E3464100964203 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE1F106816E3464100964203 /* ExampleSpec.mm */; };
+		CE1F106B16E3464200964203 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1F106A16E3464200964203 /* Cedar-iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +87,12 @@
 		CE1F103B16E2068800964203 /* LogicTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicTest-Prefix.pch"; sourceTree = "<group>"; };
 		CE1F103F16E2092E00964203 /* MyTestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTestClass.h; sourceTree = "<group>"; };
 		CE1F104016E2092E00964203 /* MyTestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTestClass.m; sourceTree = "<group>"; };
+		CE1F105E16E3464100964203 /* CedarTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CedarTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1F106416E3464100964203 /* CedarTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CedarTest-Info.plist"; sourceTree = "<group>"; };
+		CE1F106616E3464100964203 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE1F106816E3464100964203 /* ExampleSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleSpec.mm; sourceTree = "<group>"; };
+		CE1F106A16E3464200964203 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		CE1F106C16E3464200964203 /* CedarTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CedarTest-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE1F105A16E3464100964203 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1F105F16E3464100964203 /* SenTestingKit.framework in Frameworks */,
+				CE1F106016E3464100964203 /* UIKit.framework in Frameworks */,
+				CE1F106116E3464100964203 /* Foundation.framework in Frameworks */,
+				CE1F106B16E3464200964203 /* Cedar-iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -123,6 +146,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* CoreDataBooks.app */,
 				CE1F102D16E2068800964203 /* LogicTest.octest */,
+				CE1F105E16E3464100964203 /* CedarTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +199,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97315FDCFA39411CA2CEA /* Supporting Files */,
 				CE1F103216E2068800964203 /* LogicTest */,
+				CE1F106216E3464100964203 /* CedarTest */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -238,6 +263,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE1F106216E3464100964203 /* CedarTest */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F106816E3464100964203 /* ExampleSpec.mm */,
+				CE1F106A16E3464200964203 /* Cedar-iOS.framework */,
+				CE1F106316E3464100964203 /* Supporting Files */,
+			);
+			path = CedarTest;
+			sourceTree = "<group>";
+		};
+		CE1F106316E3464100964203 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE1F106416E3464100964203 /* CedarTest-Info.plist */,
+				CE1F106516E3464100964203 /* InfoPlist.strings */,
+				CE1F106C16E3464200964203 /* CedarTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +321,24 @@
 			productReference = CE1F102D16E2068800964203 /* LogicTest.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		CE1F105D16E3464100964203 /* CedarTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE1F106D16E3464200964203 /* Build configuration list for PBXNativeTarget "CedarTest" */;
+			buildPhases = (
+				CE1F105916E3464100964203 /* Sources */,
+				CE1F105A16E3464100964203 /* Frameworks */,
+				CE1F105B16E3464100964203 /* Resources */,
+				CE1F105C16E3464100964203 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CedarTest;
+			productName = CedarTest;
+			productReference = CE1F105E16E3464100964203 /* CedarTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,6 +364,7 @@
 			targets = (
 				1D6058900D05DD3D006BFB54 /* CoreDataBooks */,
 				CE1F102C16E2068800964203 /* LogicTest */,
+				CE1F105D16E3464100964203 /* CedarTest */,
 			);
 		};
 /* End PBXProject section */
@@ -332,10 +396,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE1F105B16E3464100964203 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1F106716E3464100964203 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		CE1F102B16E2068800964203 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CE1F105C16E3464100964203 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +460,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE1F105916E3464100964203 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE1F106916E3464100964203 /* ExampleSpec.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
@@ -390,6 +483,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CE1F103616E2068800964203 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE1F106516E3464100964203 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1F106616E3464100964203 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -525,6 +626,87 @@
 			};
 			name = Release;
 		};
+		CE1F106E16E3464200964203 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataBooks.app/CoreDataBooks";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/CedarTest/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CedarTest/CedarTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "CedarTest/CedarTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE1F106F16E3464200964203 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoreDataBooks.app/CoreDataBooks";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/CedarTest/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CedarTest/CedarTest-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "CedarTest/CedarTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,6 +736,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		CE1F106D16E3464200964203 /* Build configuration list for PBXNativeTarget "CedarTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE1F106E16E3464200964203 /* Debug */,
+				CE1F106F16E3464200964203 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

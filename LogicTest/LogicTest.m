@@ -27,6 +27,8 @@
 - (void)testExample
 {
   STAssertTrue(YES, @"This is it!!!");
+  
+  NSLog(@"Running OCUnit Logic test.");
 }
 
 @end
