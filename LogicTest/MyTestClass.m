@@ -15,7 +15,6 @@
 }
 
 - (void)testAgain{
-  STAssertTrue(NO, @"This will fail.");
 }
 
 @end
