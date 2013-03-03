@@ -13,7 +13,7 @@ describe(@"Example specs on NSString", ^{
     });
 
     it(@"length returns the number of characters in the string", ^{
-        [@"internationalization" length] should equal(20);
+        [@"internationalization" length] should equal(2);
     });
 
     describe(@"isEqualToString:", ^{
